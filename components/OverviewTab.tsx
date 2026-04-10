@@ -10,9 +10,10 @@ import { HistoryEntry, HoldingsData } from "@/lib/types";
 interface OverviewTabProps {
   history: HistoryEntry[];
   holdings: HoldingsData;
+  onTabChange?: (id: string) => void;
 }
 
-export default function OverviewTab({ history, holdings }: OverviewTabProps) {
+export default function OverviewTab({ history, holdings, onTabChange }: OverviewTabProps) {
   const latest = history[history.length - 1];
   const previous = history.length > 1 ? history[history.length - 2] : null;
 
@@ -29,7 +30,7 @@ export default function OverviewTab({ history, holdings }: OverviewTabProps) {
               holdings={holdings[ticker]}
               latest={latest.companies[ticker]}
               previous={previous?.companies[ticker] || null}
-              onClick={() => {}}
+              onClick={() => onTabChange?.(ticker)}
             />
           );
         })}

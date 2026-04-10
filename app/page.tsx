@@ -52,7 +52,7 @@ export default function Home() {
 
       <main className="flex-1 overflow-y-auto p-6">
         {activeTab === "overview" && (
-          <OverviewTab history={history} holdings={holdings} />
+          <OverviewTab history={history} holdings={holdings} onTabChange={setActiveTab} />
         )}
         {activeTab === "report" && <ReportTab />}
         {COMPANY_TICKERS.includes(activeTab as (typeof COMPANY_TICKERS)[number]) && (
