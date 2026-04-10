@@ -1,0 +1,56 @@
+{
+  "MSTR": {
+    "name": "Strategy (MicroStrategy)",
+    "ticker": "MSTR",
+    "btc_holdings": 528185,
+    "shares_outstanding": 244440000,
+    "sector": "Software / BTC Treasury",
+    "last_updated": "2025-03-31",
+    "description": "The largest corporate Bitcoin holder, formerly known as MicroStrategy. Pioneered the Bitcoin treasury strategy under Michael Saylor."
+  },
+  "MARA": {
+    "name": "MARA Holdings",
+    "ticker": "MARA",
+    "btc_holdings": 47600,
+    "shares_outstanding": 337000000,
+    "sector": "Bitcoin Mining",
+    "last_updated": "2025-03-31",
+    "description": "One of the largest publicly traded Bitcoin mining companies in North America."
+  },
+  "RIOT": {
+    "name": "Riot Platforms",
+    "ticker": "RIOT",
+    "btc_holdings": 19211,
+    "shares_outstanding": 420000000,
+    "sector": "Bitcoin Mining",
+    "last_updated": "2025-03-31",
+    "description": "A leading Bitcoin mining company focused on building and operating data center infrastructure."
+  },
+  "COIN": {
+    "name": "Coinbase Global",
+    "ticker": "COIN",
+    "btc_holdings": 9480,
+    "shares_outstanding": 250000000,
+    "sector": "Crypto Exchange",
+    "last_updated": "2025-03-31",
+    "description": "The largest cryptocurrency exchange in the United States, holding Bitcoin on its balance sheet."
+  },
+  "CLSK": {
+    "name": "CleanSpark",
+    "ticker": "CLSK",
+    "btc_holdings": 11869,
+    "shares_outstanding": 295000000,
+    "sector": "Bitcoin Mining",
+    "last_updated": "2025-03-31",
+    "description": "An American Bitcoin mining company focused on sustainable energy sources."
+  },
+  "HIVE": {
+    "name": "HIVE Digital Technologies",
+    "ticker": "HIVE",
+    "btc_holdings": 2201,
+    "shares_outstanding": 140000000,
+    "sector": "Bitcoin Mining",
+    "last_updated": "2025-03-31",
+    "description": "A global green-energy focused Bitcoin mining company operating in Canada, Sweden, and Iceland."
+  }
+}

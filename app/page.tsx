@@ -5,8 +5,8 @@ import TabNav from "@/components/TabNav";
 import BtcPriceIndicator from "@/components/BtcPriceIndicator";
 import OverviewTab from "@/components/OverviewTab";
 import CompanyTab from "@/components/CompanyTab";
-import AIInsightsTab from "@/components/AIInsightsTab";
 import ReportTab from "@/components/ReportTab";
+import AIChatbot from "@/components/AIChatbot";
 import { loadHistory, loadHoldings } from "@/lib/data";
 import { COMPANY_TICKERS } from "@/lib/constants";
 import { HistoryEntry, HoldingsData } from "@/lib/types";
@@ -14,7 +14,6 @@ import { HistoryEntry, HoldingsData } from "@/lib/types";
 const TABS = [
   { id: "overview", label: "Overview" },
   ...COMPANY_TICKERS.map((t) => ({ id: t, label: t })),
-  { id: "ai", label: "AI Insights" },
   { id: "report", label: "Report" },
 ];
 
@@ -55,7 +54,6 @@ export default function Home() {
         {activeTab === "overview" && (
           <OverviewTab history={history} holdings={holdings} />
         )}
-        {activeTab === "ai" && <AIInsightsTab history={history} />}
         {activeTab === "report" && <ReportTab />}
         {COMPANY_TICKERS.includes(activeTab as (typeof COMPANY_TICKERS)[number]) && (
           <CompanyTab
@@ -65,6 +63,8 @@ export default function Home() {
           />
         )}
       </main>
+
+      <AIChatbot history={history} holdings={holdings} />
     </div>
   );
 }
