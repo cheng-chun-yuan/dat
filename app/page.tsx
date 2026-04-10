@@ -33,8 +33,9 @@ export default function Home() {
 
   if (loading) {
     return (
-      <div className="flex items-center justify-center min-h-screen">
-        <div className="text-text-secondary text-lg">Loading data...</div>
+      <div className="flex flex-col items-center justify-center min-h-screen gap-4">
+        <div className="w-8 h-8 border-2 border-accent-positive/30 border-t-accent-positive rounded-full animate-spin" />
+        <div className="text-text-secondary text-sm">Fetching market data...</div>
       </div>
     );
   }
